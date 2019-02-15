@@ -7,6 +7,7 @@ function FooterController($scope, FooterService){
 			return;
 		$scope.price = "$"+r_market.usd+" (" + r_market.btc + " btc)";
 		$scope.marketCap = "$"+fmtSplit(Math.round(r_market.cap));
+		$scope.rank = r_market.rank;
 	});
 	// load version info
 	FooterService.version(function(r_version){

@@ -1,7 +1,8 @@
 const config = {
 	port: 8081,
 	mongodb: 'mongodb://localhost/explorer',
-	nisHost: '127.0.0.1',
+	nisHost: '162.243.227.155',
+//	nisHost: '138.68.243.70',
 	nisPort: '7890',
 	wsPort: '7778',
 	wsPath: '/w/messages',

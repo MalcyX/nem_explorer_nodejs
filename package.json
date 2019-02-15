@@ -2,7 +2,7 @@
   "name": "nem_explorer_nodejs",
   "version": "1.5.4",
   "description": "",
-  "main": "bin/www",
+  "main": "app.js",
   "scripts": {
     "start": "babel-node app.js"
   },

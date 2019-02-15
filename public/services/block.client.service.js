@@ -9,6 +9,7 @@ function BlockService($http){
 		},
 		blockList: function(params, callback) {
 			$http.post("/block/list", params).success(function(data){
+				console.log('block',data);
 				callback(data);
 			});
 		},

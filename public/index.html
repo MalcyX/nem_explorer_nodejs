@@ -13,7 +13,7 @@
 <div id="header" class="container">
     <div id="navigation" class="row top-buffer-10" ng-controller="NavController">
         <div class="col-xs-12">
-        	<div class="pull-left" style="margin-right:10px;"><a href="#blocklist"><img src="views/images/nem_2.png" width="101.38" height="31"></a></div>
+        	<div class="pull-left" style="margin-right:10px;"><a href="#blocklist"><img src="views/images/logo.png" width="101.38" height="31"></a></div>
         	<div class="pull-right form-group bottom-buffer-10">
 		        <form class="form-inline" role="form">
 		        	<input id="searchInput" type="text" style="width:200px;" class="form-control" placeholder="block height / tx id / account">
@@ -85,8 +85,8 @@
 <footer class="footer navbar-fixed-bottom" style="margin-bottom:-10px;">
 	<div class="container" ng-controller="FooterController">
 		<p>
-			<a href="http://nem.io" target="_blank">NEM IO</a> 
-			&nbsp;&nbsp; <a href="https://forum.nem.io/" target="_blank">NEM Forum</a> 
+			<a href="http://dimcoin.io" target="_blank">DIMCOIN IO</a> 
+			&nbsp;&nbsp; <a href="https://forum.dim.foundation/" target="_blank">DIMCOIN Forum</a> 
 			&nbsp;&nbsp; <a href="https://supernodes.nem.io/" target="_blank">NEM Supernodes</a> 
 			&nbsp;&nbsp; &nbsp;&nbsp; 
 			Market Cap:
@@ -94,7 +94,9 @@
 			&nbsp;&nbsp;
 			Price:
 			<span ng-bind="price"></span>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <b>Rank: <span ng-bind="rank"></span></b>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <a href="https://github.com/NEMChina/nem_explorer_nodejs/commits/master" target="_blank">
       Version:
       <span ng-bind="version"></span>
@@ -102,7 +104,7 @@
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <a href="https://forum.nem.io/t/explorer-ournem-com-feedback/" target="_blank">Feedback</a>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a href="http://testnet-explorer.nemtool.com" target="_blank">Testnet Explorer</a>
+      
 		</p>
 	</div>
 </footer>

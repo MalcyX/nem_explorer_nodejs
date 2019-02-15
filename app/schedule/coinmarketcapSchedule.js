@@ -2,7 +2,7 @@ import https from 'https';
 import cache from '../cache/appCache';
 import schedule from 'node-schedule';
 
-const URL = "https://api.coinmarketcap.com/v1/ticker/nem/";
+const URL = "https://api.coinmarketcap.com/v1/ticker/dimcoin/";
 
 let scheduleFetchPrice = () => {
 	fetchPrice();
@@ -35,6 +35,7 @@ let fetchPrice = () => {
 		saveObj.usd = market.price_usd;
 		saveObj.btc = market.price_btc;
 		saveObj.cap = market.market_cap_usd;
+		saveObj.rank = market.rank
 		cache.appCache.set(cache.marketPrefix, saveObj);
 	});
 }

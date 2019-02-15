@@ -31,11 +31,13 @@ module.exports = {
 				let page = 1;
 				if(req.body.page)
 					page = req.body.page;
+					console.log('height obj',currentHeightObj);
 				let height = currentHeightObj.height;
 				height = height - (10+BLOCKLISTSIZE*(page-1));
 				let heightObj = JSON.stringify({"height": height});
 				//query block list
 				nis.blockList(heightObj, data => {
+					console.log('data',data);
 					//return a empty array if there is no data
 					if(!data || !data.data){
 						res.json([]);
